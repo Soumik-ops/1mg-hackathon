@@ -41,3 +41,15 @@ Backend: Node.js / Firebase / Mock Data
 APIs: Web Speech API (for voice search)
 
 Tools: GitHub, VS Code
+👨‍💻 Team Members
+
+Soumik Khawas
+
+Subhajit Bera
+
+📌 Hackathon Submission
+
+PPT: https://1drv.ms/b/c/441d5c7e30112118/Ed8AichaLR5Jn-GnkYVSnV8BfxU1MGI5A034nbbQkREJFg?e=myQOxS
+
+GitHub Repo Link: 
+
