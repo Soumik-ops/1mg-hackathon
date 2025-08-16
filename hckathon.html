@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>1mg Hackathon - Voice Search MVP</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+      background: #f9f9f9;
+    }
+    h1 {
+      color: #e53935;
+    }
+    button {
+      background: #e53935;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #c62828;
+    }
+    #result {
+      margin-top: 30px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎤 Voice Search for Medicines</h1>
+  <p>Click the button and say a medicine name (e.g. "Paracetamol")</p>
+
+  <button id="startBtn">Start Voice Search</button>
+
+  <div id="result">Result will appear here...</div>
+
+  <script>
+    const medicines = ["paracetamol", "crocin", "dolo", "azithromycin", "cetirizine"];
+
+    const resultDiv = document.getElementById("result");
+    const startBtn = document.getElementById("startBtn");
+
+    // Web Speech API
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    const recognition = new SpeechRecognition();
+    recognition.lang = "en-IN"; 
+    recognition.interimResults = false;
+
+    startBtn.addEventListener("click", () => {
+      recognition.start();
+      resultDiv.innerHTML = "🎙️ Listening...";
+    });
+
+    recognition.addEventListener("result", (event) => {
+      const transcript = event.results[0][0].transcript.toLowerCase();
+      resultDiv.innerHTML = `You said: <b>${transcript}</b>`;
+
+      // Check against mock medicine database
+      const match = medicines.find(med => transcript.includes(med));
+      if (match) {
+        resultDiv.innerHTML += `<br>✅ Medicine found: <b>${match}</b>`;
+      } else {
+        resultDiv.innerHTML += `<br>❌ No match found in database.`;
+      }
+    });
+
+    recognition.addEventListener("end", () => {
+      console.log("Recognition ended.");
+    });
+  </script>
+
+</body>
+</html>

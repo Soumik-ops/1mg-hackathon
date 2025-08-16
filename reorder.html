@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>1mg Hackathon - One-Swipe Reorder MVP</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+      background: #f9f9f9;
+    }
+    h1 {
+      color: #1e88e5;
+    }
+    .order-card {
+      margin: 20px auto;
+      padding: 20px;
+      width: 300px;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .order-card h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .order-card ul {
+      text-align: left;
+      margin: 10px 0;
+    }
+    .btn {
+      background: #1e88e5;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .btn:hover {
+      background: #1565c0;
+    }
+    #cart {
+      margin-top: 30px;
+      padding: 20px;
+      background: #e3f2fd;
+      border-radius: 10px;
+      width: 350px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🛒 One-Swipe Reorder</h1>
+  <p>Quickly reorder your last prescription in a single click.</p>
+
+  <div class="order-card">
+    <h3>Last Order</h3>
+    <ul>
+      <li>Paracetamol 500mg</li>
+      <li>Cetirizine 10mg</li>
+      <li>Vitamin C Tablets</li>
+    </ul>
+    <button class="btn" id="reorderBtn">🔄 Reorder Now</button>
+  </div>
+
+  <div id="cart">
+    <h3>🛍️ Your Cart</h3>
+    <ul id="cartItems">
+      <li>No items yet</li>
+    </ul>
+  </div>
+
+  <script>
+    const lastOrder = ["Paracetamol 500mg", "Cetirizine 10mg", "Vitamin C Tablets"];
+    const cartItems = document.getElementById("cartItems");
+    const reorderBtn = document.getElementById("reorderBtn");
+
+    reorderBtn.addEventListener("click", () => {
+      cartItems.innerHTML = ""; // Clear cart
+      lastOrder.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        cartItems.appendChild(li);
+      });
+      alert("✅ Your last prescription has been reordered!");
+    });
+  </script>
+
+</body>
+</html>
