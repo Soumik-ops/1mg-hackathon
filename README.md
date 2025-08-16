@@ -1,2 +1,43 @@
 # 1mg-hackathon
 MVP for Hackathon submission (Refill Reminder, Voice Search, Smart Cart, Reorder)
+Problem Statement
+
+Patients using online pharmacies often face challenges like:
+
+Forgetting to reorder medicines on time.
+
+Struggling with typing complicated medicine names.
+
+Paying more for branded medicines without knowing about cheaper generics.
+
+Reordering past prescriptions taking too many steps.
+
+💡 Our Solution
+
+We built 4 quick, impactful features to improve user experience & business outcomes for 1mg:
+
+One-Tap Medicine Refill Reminder
+
+Reminds patients before stock runs out → ensures timely care & repeat orders.
+
+Smart Cart with Generic Alternatives
+
+Suggests cheaper generics + interaction alerts → builds trust & drives conversions.
+
+Voice Search for Medicines
+
+Lets users search by speaking medicine names in English/Hindi → inclusive UX.
+
+One-Swipe Reorder from Homepage
+
+Reorders last prescription instantly → boosts convenience & retention.
+
+🛠️ Tech Stack
+
+Frontend: HTML, CSS, JavaScript (or React if you use it)
+
+Backend: Node.js / Firebase / Mock Data
+
+APIs: Web Speech API (for voice search)
+
+Tools: GitHub, VS Code
