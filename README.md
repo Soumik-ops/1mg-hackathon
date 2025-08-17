@@ -16,25 +16,25 @@ Reordering past prescriptions taking too many steps.
 
 We built 4 quick, impactful features to improve user experience & business outcomes for 1mg:
 
-One-Tap Medicine Refill Reminder
+1) One-Tap Medicine Refill Reminder:
 
 Reminds patients before stock runs out → ensures timely care & repeat orders.
 
-Smart Cart with Generic Alternatives
+2)Smart Cart with Generic Alternatives:
 
 Suggests cheaper generics + interaction alerts → builds trust & drives conversions.
 
-Voice Search for Medicines
+3) Voice Search for Medicines:
 
 Lets users search by speaking medicine names in English/Hindi → inclusive UX.
 
-One-Swipe Reorder from Homepage
+4) One-Swipe Reorder from Homepage:
 
 Reorders last prescription instantly → boosts convenience & retention.
 
 🛠️ Tech Stack
 
-Frontend: HTML, CSS, JavaScript (or React if you use it)
+Frontend: HTML, CSS, JavaScript 
 
 Backend: Node.js / Firebase / Mock Data
 
@@ -52,6 +52,7 @@ Subhajit Bera
 
 PPT: https://1drv.ms/b/c/441d5c7e30112118/Ed8AichaLR5Jn-GnkYVSnV8BfxU1MGI5A034nbbQkREJFg?e=myQOxS
 GitHub Repo Link: https://github.com/Soumik-ops/1mg-hackathon/tree/main
+
 ## 🔗 Live Demo
 👉 Click here to try our MVP (https://medi-magic-boost.lovable.app/)
 
