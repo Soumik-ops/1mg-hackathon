@@ -51,5 +51,7 @@ Subhajit Bera
 
 PPT: https://1drv.ms/b/c/441d5c7e30112118/Ed8AichaLR5Jn-GnkYVSnV8BfxU1MGI5A034nbbQkREJFg?e=myQOxS
 
-GitHub Repo Link: 
+## 🔗 Live Demo
+👉 [Click here to try our MVP](https://medi-magic-boost.lovable.app/)
+
 
